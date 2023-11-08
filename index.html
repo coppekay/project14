@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuITqCNkxE1IzeIWGTVa-SYUq4XTtAtbM&callback=initMap&v=weekly" defer></script>
+    <title>Road Trip</title>
+</head>
+<body>
+    
+    <div id="map"style=""></div>
+
+        <div class="roadTrip marker" onclick="polyline()">
+            <h1>Road Trip</h1>
+                <div class="why">
+                    <h2>I plan on making a big trip across the US to see many different places/landmarks. My plan is when i take this trip i will have a van converted and take a couple of weeks or months to do this trip. My hope is in the future I will be able to add my own photos of these places instead if the ones I have here. </h2>
+                    <p>Click to see the route</p>
+                </div>
+        <div id="polyline">
+            
+        </div>
+    </div>
+    
+
+    <div class="grid">
+        <div class="marker home"  id="home" onclick="homeMarker()">
+            <img class="photos" src="./photos/burleson.png" alt="">
+            <p>Of course the trip will start in my hometown. Burleson isn't a huge city and to me theres not that much that goes on but it is home to Kelly Clarkson which I find pretty cool.</p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        <div class="marker" id="chicago" onclick="chicagoMarker()">
+            <img class="photos" src="./photos/chicago.jpg" alt="">
+            <p>I want to go to Chicago because I honestly haven't had the ability to see many bigger cities in the northern part of the US and I have a friend moving up there. </p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        <div class="marker" id="yellow" onclick="yellowMarker()">
+            <img class="photos" src="./photos/yellowStone.avif" alt="">
+            <p>Next I'm planning on going to Yellowstone National Park. I want to go there because it's somewhere that I've heard about and would love to just experience. </p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        <div class="marker"  id="seattle" onclick="seattleMarker()">
+            <img class="photos" src="./photos/seattle.jpg" alt="">
+            <p>Seattle is actually one of the places I have been to. The photo above is one I took when I was there. I would love to go again and explore even more.</p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        <div class="marker"  id="yosemite" onclick="yosemiteMarker()">
+            <img class="photos" src="./photos/yosemite.jpg" alt="">
+            <p>Yosemite National Park is a place I want to go because of the views and the waterfalls. I think it would be an amazing place to be able to take photos and just spend time out in nature. </p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        
+
+        <div class="marker" id="mammoth" onclick="mammothMarker()">
+            <img class="photos" src="./photos/mammoth.jpg" alt="">
+            <p> The Mammoth Lakes in california is another one of the places that I want to go to for the views and the hiking.</p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        <div class="marker" id="grand"  onclick="grandMarker()">
+            <img class="photos" src="./photos/grandCanyon.jpg" alt="">
+            <p>I also have been here although I went to the sourt rim and on this trip I want to go to the North rim. </p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        <div class="marker" id="provo" onclick="provoMarker()">
+            <img class="photos" src="./photos/provo.jpg" alt="">
+            <p>This stop will be for me to recuperate. I have family that lives in this area so I will take time to see them and just relax. </p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        <div class="marker" id="char" onclick="charMarker()">
+            <img class="photos" src="./photos/portChar.jpeg" alt="">
+            <p>This is also another stop for me to relax and visit with family.</p>
+            <p class="click">Click to see on the map</p>
+        </div>
+
+        <div class="marker" id="salem" onclick="salemMarker()">
+            <img class="photos" src="./photos/salem.jpeg" alt="">
+            <p>This stop, in Salem is one of the main places I really want to go it is a place that has fascinated me and I want to learn more about it and visit. </p>
+            <p class="click">Click to see on the map</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
